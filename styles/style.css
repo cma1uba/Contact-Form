@@ -13,7 +13,7 @@ body{
 a{
     color: hsl(228, 45%, 44%);
 }
-.Contact-form-container{
+.contact-form-container{
     width: 100%;
     max-width: 375px;
     padding: 24px;
@@ -156,4 +156,22 @@ input[type="checkbox"]:checked::after {
 .submit-button:hover {
     background-color: #005f56;
     transform: translateY(-2px);
+}
+
+@media (min-width: 400px){
+    .contact-form-container{
+        max-width: 700px;
+    }
+    .form-main{
+        display: flex;
+        flex-direction: row;
+    }
+    .form-group{
+        width: 100%;
+        margin-right: 15px;
+    }
+    .radio-label{
+        width: 100%;
+        margin-right: 15px;
+    }
 }
