@@ -157,7 +157,28 @@ input[type="checkbox"]:checked::after {
     background-color: #005f56;
     transform: translateY(-2px);
 }
-
+.error-message{
+    color: hsl(0, 66%, 54%);
+    font-size: 13px;
+    margin-top: 4px;
+    display: none;
+}
+.form-group.error .error-message,
+.radio-group.error .error-message,
+.consent-group.error .error-message {
+    display: block;
+}
+.form-group.error input[type="text"],
+.form-group.error input[type="email"],
+.form-group.error textarea {
+    border-color: hsl(0, 66%, 54%);
+}
+.radio-group.error .radio-label {
+    border-color: hsl(0, 66%, 54%);
+}
+.consent-group.error input[type="checkbox"] {
+    border-color: hsl(0, 66%, 54%);
+}
 @media (min-width: 400px){
     .contact-form-container{
         max-width: 700px;
@@ -165,13 +186,10 @@ input[type="checkbox"]:checked::after {
     .form-main{
         display: flex;
         flex-direction: row;
-    }
-    .form-group{
-        width: 100%;
-        margin-right: 15px;
+        gap: 16px;
     }
     .radio-label{
         width: 100%;
         margin-right: 15px;
     }
-}
+    }
