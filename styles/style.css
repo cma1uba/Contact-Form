@@ -181,6 +181,7 @@ input[type="checkbox"]:checked::after {
 }
 @media (min-width: 400px){
     .contact-form-container{
+        margin: auto;
         max-width: 800px;
     }
     .form-main{
