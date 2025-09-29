@@ -181,19 +181,15 @@ input[type="checkbox"]:checked::after {
 }
 @media (min-width: 400px){
     .contact-form-container{
-        max-width: 700px;
+        max-width: 800px;
     }
     .form-main{
         display: flex;
         flex-direction: row;
         gap: 16px;
     }
-    .form-group{
-        width: 100%;
-        flex-basis: 1;
-}
-    .radio-label{
-        width: 100%;
+    .form-group, radio-label{
+        width:100%;
         flex-basis: 1;
     }
     }
