@@ -188,7 +188,7 @@ input[type="checkbox"]:checked::after {
         flex-direction: row;
         gap: 16px;
     }
-    .form-group, radio-label{
+    .form-group, .radio-label{
         width:100%;
         flex-basis: 1;
     }
